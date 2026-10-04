@@ -1,0 +1,93 @@
+Corpus length: 143
+Vocab: ['\n', ' ', '.', 'I', 'a', 'b', 'c', 'd', 'e', 'g', 'i', 'k', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'z']
+Num training samples: 103
+Final loss: 0.27131953835487366
+
+=== Temperature 0.1 ===
+Top probabilities for the first generated character:
+  'o': 99.8%
+  's': 0.2%
+  'a': 0.0%
+  't': 0.0%
+  'b': 0.0%
+                                 I like os.
+I like boding.
+I like puzzles.
+I like boding.
+I like boding.
+I like pizza.
+I like pizza.
+I like pizza.
+I like bobos.
+I like books.
+I like tacos.
+I like pizza.
+I like puzzles.
+I
+
+=== Temperature 0.5 ===
+Top probabilities for the first generated character:
+  'o': 64.0%
+  's': 18.5%
+  'a': 9.6%
+  't': 2.8%
+  'b': 1.4%
+                                 I like os.
+I like bobots.
+I like tasic.
+I like coding.
+I like pizza.
+I like coding.
+I like mucos.
+I like puzzles.
+I like tasic.
+I like cobos.
+I like boding.
+I like robots.
+I like pizza.
+I
+
+=== Temperature 0.7 ===
+Top probabilities for the first generated character:
+  'o': 48.7%
+  's': 20.0%
+  'a': 12.6%
+  't': 5.2%
+  'b': 3.2%
+                                 I like s.
+I like tacos.
+I like taos.
+I like boding.
+I like pizza.
+I like puzzles.
+I like music.
+I like pizza.
+I like tacos.
+I like bobots.
+I like taic.
+I like puzzles.
+I like bobos.
+I lik
+
+=== Temperature 1.0 ===
+Top probabilities for the first generated character:
+  'o': 34.5%
+  's': 18.5%
+  'a': 13.4%
+  't': 7.2%
+  'b': 5.1%
+                                 I like ob.
+I like puzzlzs.
+I like cosic.
+I like music.
+I like piza.
+I like aoding.
+I like taac.
+I like pizzles.
+I like pauzlcs.
+I like tac.
+I like tsis.
+I like puzzles.
+I like robos
+
+I li

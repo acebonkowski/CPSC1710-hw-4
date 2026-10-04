@@ -78,7 +78,7 @@ history = model.fit(X, y, batch_size=64, epochs=20, verbose=0)
 print("Final loss:", history.history["loss"][-1])
 
 
-#5 Adjust "Greediness" via Temperature
+#5 Define necessary functions: 1) to return the top 5 most likeliest chars, 2) to sample the next char & output probability and 3) to generate text based on a seed, temperature & output length
 # Temperature determined how likely the model picks the most likeliest choice as number approaches 0)
 def sample_logits(logits, temperature=1.0):
     # function that returns the most likely character is temp is ≤ 0 (greedy)
