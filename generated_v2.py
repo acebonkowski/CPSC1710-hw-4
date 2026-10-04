@@ -113,7 +113,7 @@ def generate(seed, n, temperature=1.0):
 
 # ---------- Step 7: compare temperatures ----------
 prompt = "I like "
-max_text_chars = 188  # seed plus new characters, not counting padding spaces
+max_text_chars = 188  # seed plus new characters; the left-padding is printed on top
 n_new_chars = min(180, max_text_chars - len(prompt))
 
 for temperature in [0.1, 0.5, 0.7, 1.0]:
