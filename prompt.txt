@@ -1,0 +1,3 @@
+# HIGH LEVEL OVERVIEW
+
+The given code generates a 188 character text based on 1) a sample of training text, e.g., the 10 "I like..." sentences, 2) the chosen temperature
