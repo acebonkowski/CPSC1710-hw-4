@@ -28,7 +28,7 @@ Step 5: Train the model with a batch size of 64 across 20 epochs at zero verbose
 Step 6: Define 3 helper functions:
   1) sample_logits: picks the id of the next character. If temperature <= 0, take the highest score. Otherwise divide the scores by the temperature, convert them to probabilities, and randomly choose an id using rng and those probabilities.
   2) next_char_probabilities: pads the seed on the left with spaces to 40 characters, converts the last 40 characters to ids (unknown characters become id 0), feeds them to the model as a batch of one question to get the 22 scores, turns the scores into probabilities (softmax of scores divided by temperature, or 100% on the top character if temperature <= 0), and returns the top 5 (character, probability) pairs, highest first.
-  3) generate: pads the seed to 40 characters, then repeat the process n times: get the scores from the model for the current 40-character context, pick the next character with, add it to the output, and update the context by dropping its oldest id and adding the new one. Returns the output as a string.
+  3) generate: pads the seed to 40 characters, then repeat the process n times: get the scores from the model for the current 40-character context, pick the next character with, add it to the output, and update the context by dropping its oldest id and adding the new one. Returns the output as a string, including the padding spaces in the output.
 
 Step 7: For each temperature in [0.1, 0.5, 0.7, 1.0]:
   - print a subheader with the temperature of the run
