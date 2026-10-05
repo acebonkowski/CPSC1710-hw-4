@@ -1,0 +1,36 @@
+# HIGH LEVEL OVERVIEW
+
+We want to create a word-level tokenizer that tokenizes the following text:
+
+paragraphs = [
+    "In 2026, we teach `intro-to-AI` with hands-on labs—no hype. Students ask: `Why tokens?` Because models read pieces, not words. E.g., `ChatGPT-5` ≠ `Chat`, `GPT`, `5` in all schemes. We track loss/accuracy, compare char/word/BPE, and test a URL: https://example.org/a/b?c=42. Café prices rose 3.7%—blame supply-chain weirdness (and ☕ demand).",
+]
+
+# PSEUDECODE STEP BY STEP
+
+1) Convert the Text
+text_lowercase = make “paragraphs” lowercase
+text_clean = remove punctuation & replace all characters that is not a letter, digit or whitespace with a space in “text_lowercase”
+tokens = split “text_lowercase” by whitespaces, removing duplicate words
+print: len of words to see number of different words in var words
+
+2)Create a Vocabulary
+vocabulary = dictionary of sorted unique tokens/words
+stoi = for every word w in vocabulary, enumerate it 
+itos = for every number in stoi, convert back into word of the vocabulary
+vocabulary_size = len of vocabulary
+    
+print vocabulary: print items of individual words in dictionary
+print vocabulary_size: print number of different words
+
+3)Encode Tokens into IDs
+encoded_tokens = for each word in tokens, get the associated ID from stoic & form a list
+print: encoded_tokens
+
+4)Decode IDs into Tokens
+decoded_token = for every ID in itos, get the associated word & form a list
+print: decoded_tokens
+
+5)Generate 5-Word Sentence
+sentence = glue 5 words of decoded_tokens together with a space in between each word 
+print: sentence
