@@ -12,7 +12,7 @@ paragraphs = [
 text_lowercase = make “paragraphs” lowercase
 text_clean = remove punctuation & replace all characters that is not a letter, digit or whitespace with a space in “text_lowercase”
 words = split “text_clean” by whitespaces, keeping duplicate words
-print: len of words to see the total word count of the paragraph (incl. duplicate words) -> this is the first output
+print: len of words to see the total word count of the paragraph (incl. duplicate words)
 tokens = split “text_lowercase” by whitespaces, removing duplicate words
 print: len of tokens to see number of different words in var tokens
 

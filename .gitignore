@@ -1,5 +1,56 @@
+# Virtual environments
 .venv/
+venv/
+env/
+
+# Python caches
 __pycache__/
 *.pyc
-.DS_Store
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
 
+# Downloaded packages & installers
+*.pkg
+*.dmg
+*.exe
+*.msi
+*.whl
+*.egg-info/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+site-packages/
+
+# Trained-model files
+*.keras
+*.h5
+*.hdf5
+*.weights.h5
+*.ckpt
+*.ckpt.*
+*.pb
+*.tflite
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.pkl
+*.joblib
+*.npy
+*.npz
+checkpoint
+checkpoints/
+saved_model/
+models/
+
+# Other large generated files
+logs/
+runs/
+wandb/
+mlruns/
+*.log
+
+# OS / editor
+.DS_Store
